@@ -6,8 +6,8 @@
 			<!--<input type="text" class="form-control" id="email" name="email" placeholder="Email" required ng-model="user.email"/>-->
 			<!--<input type="password" class="form-control" id="password" name="password" placeholder="Password" required ng-model="user.password"/>-->
 			<!--<button type="submit" class="btn btn-success btn-lg">{{'header.sign_in' | translate}}</button>-->
-			<button type="button" class="btn btn-info btn-lg" role="button" ng-click="openNewUserModal()">{{'header.sign_up_individual' | translate}}</button>
-			<a ng-href="#/assembly/create?userIsNew=true"><button type="button" class="btn btn-info btn-lg">{{'header.sign_up_group' | translate}}</button></a>
+			<button type="button" class="btn btn-info btn-white btn-lg" role="button" ng-click="openNewUserModal()">{{'header.sign_up_individual' | translate}}</button>
+			<a ng-href="#/assembly/create?userIsNew=true"><button type="button" class="btn btn-info btn-white btn-lg">{{'header.sign_up_group' | translate}}</button></a>
 			<a href="#section2" du-smooth-scroll class="btn btn-success btn-lg">{{'landing.Learn more' | translate}}</a>
 		</form>
 		<h6 class="text-center bottom-info"></h6>
@@ -17,32 +17,34 @@
 	<div class="section second-section" id="section2">
 		<div class="row">
 			<span class="col-md-1 col-sm-1 hidden-xs"></span>
-			<h2 class="col-md-9 col-sm-9 col-xs-12 main-title">{{'landing.goal' | translate}}</h2>
+			<h3 class="col-md-12 col-sm-12 col-xs-12 main-title">{{'landing.goal' | translate}}</h3>
 		</div>
 		<div class="jumbotron jumbotron-index hidden-xs hidden-sm">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-1">
+					<div class="col-md-3">
 						<i class="icon-doc-text"></i>
 						<h5>{{'Proposal Making' | translate}}</h5>
 					</div>
-					<div class="col-md-1">
+					<div class="col-md-3">
 						<i class="icon-users"></i>
 						<h5>{{'Working Groups' | translate}}</h5>
 					</div>
-					<div class="col-md-1">
+					<div class="col-md-3">
 						<i class="icon-flag-empty"></i>
 						<h5>{{'Mobilizing' | translate}}</h5>
 					</div>
-					<div class="col-md-1">
+					<div class="col-md-3">
 						<i class="icon-chat-empty"></i>
 						<h5>{{'Deliberating' | translate}}</h5>
 					</div>
-					<div class="col-md-1">
+				</div>
+				<div class="row">
+					<div class="col-md-3">
 						<i class="icon-docs"></i>
 						<h5>{{'Versioning' | translate}}</h5>
 					</div>
-					<div class="col-md-1">
+					<div class="col-md-3">
 						<i class="icon-chart-bar"></i>
 						<h5>{{'Visualizing' | translate}}</h5>
 					</div>
@@ -52,15 +54,17 @@
                 		<h5>Drawing</h5>
               		</div>
      				-->
-					<div class="col-md-1">
+					<div class="col-md-3">
 						<i class="icon-thumbs-up"></i>
 						<h5>{{'Voting' | translate}}</h5>
 					</div>
-					<div class="col-md-1">
+					<div class="col-md-3">
 						<i class="icon-megaphone"></i>
 						<h5>{{'Reporting' | translate}}</h5>
 					</div>
-					<div class="col-md-1">
+				</div>
+				<div class="row">
+					<div class="col-md-3">
 						<i class="icon-location"></i>
 						<h5>{{'Mapping' | translate}}</h5>
 					</div>
@@ -70,11 +74,10 @@
                 		<h5>Alerts</h5>
               		</div>
               		-->
-					<div class="col-md-1">
+					<div class="col-md-3">
 						<i class="icon-desktop"></i>
 						<h5>{{'Implementing' | translate}}</h5>
 					</div>
-					<div class="col-md-1"></div>
 				</div>
 			</div>
 		</div>
@@ -281,4 +284,3 @@
 	<div class="voffset6 hidden-lg hidden-md hidden-sm"></div>
 
 </div>
-
