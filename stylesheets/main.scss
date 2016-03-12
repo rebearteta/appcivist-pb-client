@@ -66,6 +66,7 @@ p {
 
 /* Button Styles bootstrap override
 --------------------------------------------*/
+/*
 .btn,
 button,
 input[type="submit"],
@@ -123,6 +124,7 @@ input[type="button"].button-primary:focus {
   color: #FFF!important;
   background-color: #1EAEDB!important;
   border-color: #1EAEDB!important; }
+*/
 
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -406,9 +408,9 @@ $dropDown       : false;
     border-width: 1px;
   }
   .icon-circle-number {
-    font-size: 2em;
-    font-weight: 700;
-    line-height: (8em / 14);
+    font-size: 1.8em;
+    line-height: 0.2;
+    width: 31px;
     text-align: center;
     color: $white;
     // calculated based on fa icon 3x (51.438x60)

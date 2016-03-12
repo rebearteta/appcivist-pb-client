@@ -2775,31 +2775,30 @@ p {
 
 /* Button Styles bootstrap override
 --------------------------------------------*/
+/*
 .btn,
 button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  background: transparent !important;
-  display: inline-block !important;
-  height: 38px !important;
-  padding: 0 30px !important;
-  color: #555 !important;
-  text-align: center !important;
-  font-size: 11px !important;
-  font-weight: 600 !important;
-  line-height: 38px !important;
-  letter-spacing: 0.1rem !important;
+  background: transparent!important;
+  display: inline-block!important;
+  height: 38px!important;
+  padding: 0 30px!important;
+  color: #555!important;
+  text-align: center!important;
+  font-size: 11px!important;
+  font-weight: 600!important;
+  line-height: 38px!important;
+  letter-spacing: .1rem!important;
   text-transform: uppercase;
-  text-decoration: none !important;
-  white-space: nowrap !important;
-  background-color: transparent !important;
-  border-radius: 4px !important;
-  border: 2px solid #bbb !important;
+  text-decoration: none!important;
+  white-space: nowrap!important;
+  background-color: transparent!important;
+  border-radius: 4px!important;
+  border: 2px solid #bbb!important;
   cursor: pointer;
-  box-sizing: border-box !important;
-}
-
+  box-sizing: border-box !important;}
 .button:hover,
 button:hover,
 input[type="submit"]:hover,
@@ -2810,21 +2809,17 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333 !important;
-  border-color: #888 !important;
-  outline: 0 !important;
-}
-
+  color: #333!important;
+  border-color: #888!important;
+  outline: 0 !important;}
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF !important;
-  background-color: #33C3F0 !important;
-  border-color: #33C3F0 !important;
-}
-
+  background-color: #33C3F0!important;
+  border-color: #33C3F0!important; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -2835,16 +2830,10 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  color: #FFF !important;
-  background-color: #1EAEDB !important;
-  border-color: #1EAEDB !important;
-}
-
-.btn-success {
-  color: #33C3F0 !important;
-  background: #33c3F0 !important;
-}
-
+  color: #FFF!important;
+  background-color: #1EAEDB!important;
+  border-color: #1EAEDB!important; }
+*/
 /* Wrapper for page content to push down footer */
 #wrap {
   min-height: 100%;
