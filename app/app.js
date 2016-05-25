@@ -272,11 +272,17 @@ function config($routeProvider, $locationProvider, $resourceProvider, $httpProvi
                 //}
                 return config;
             },
-            'responseError': function(response) {
+            'requestError': function(rejection) {
+              return $q.reject(rejection);
+            },
+            'response': function(response) {
+              return reponse || $q.when(response);
+            },
+            'responseError': function(rejection) {
                 //if(response.status === 401 || response.status === 403) {
                 //    $location.path('/');
                 //}
-                return $q.reject(response);
+                return $q.reject(rejection);
             }
         };
     }]);

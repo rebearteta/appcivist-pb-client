@@ -1243,3 +1243,60 @@ appCivistApp.factory('BallotCampaign', function($http, $resource, localStorageSe
         {"uuid": "@id"}
     );
 });
+
+// appCivistApp.factory('spinnerResponseInterceptor', function($q,$location){
+//   return{
+//     response: function(response){
+//       return promise.then(
+//         function success(response){
+//           return response;
+//         },
+//         function error(response){
+//           if(response.status ==  401 || response.status == 400){
+//             $location.path('/');
+//             return $q.reject(response);
+//           }
+//           else {
+//             return $q.reject(response);
+//           }
+//         });
+//     }
+//   }
+// });
+//
+// appCivistApp.factory('spinnerRequestInterceptor', function($cookies){
+//   return {
+//     request: function(){
+//       //start spinner
+//     }
+//   }
+// });
+
+appCivistApp.factory('spinnerInterceptor', function($q){
+  return {
+    //on request success
+    request: function (config) {
+      alert("request success");
+      return config || $q.when(config);
+    },
+
+    //on request failure
+    requestError: function(rejection){
+      console.log(rejection);
+      alert("request failure");
+      return $q.reject(rejection);
+    },
+
+    // on response success
+    response: function(response) {
+      alert("response success");
+      return reponse || $q.when(response);
+    },
+
+    // on response failure
+    responseError: function(rejection) {
+      alert("repsonse failure");
+      return $q.reject(rejection);
+    }
+  };
+});
