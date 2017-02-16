@@ -13,7 +13,7 @@
       <fieldset>
         <div class="field__container">
           <label for="add_proposal__title">{{'Title' | translate}} <abbr title="Required">*</abbr></label>
-          <input ng-model="contribution.title" ng-required="true" ng-disabled="disabled" id="add_proposal__title" type="text" placeholder="Title" name="title">
+          <input ng-model="contribution.title" ng-required="true" ng-disabled="disabled" id="add_proposal__title" type="text" placeholder="{{ 'Title' | translate }}" name="title">
           <div ng-messages="contributionForm.title.$error" style="color:maroon" role="alert">
             <div ng-message="required">{{'This field is required' | translate}}</div>
           </div>

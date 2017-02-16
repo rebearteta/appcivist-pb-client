@@ -251,11 +251,11 @@
               <!--Flags <em>{{flagSum}}</em>-->
             </div>
             <div class="informal_score stats2">
-              <span>Needs</span>
+              <span>{{ 'Needs' | translate }}</span>
               <span class="glyphicon glyphicon-star" ng-class="i" ng-repeat="i in createArray(needAvg) track by $index"/>
-              <span>Feasibility</span>
+              <span>{{ 'Feasibility' | translate }} </span>
               <span class="glyphicon glyphicon-star" ng-class="i" ng-repeat="i in createArray(feasibilityAvg) track by $index"/>
-              <span>Benefict</span>
+              <span>{{ 'Benefict' | translate }}</span>
               <span class="glyphicon glyphicon-star" ng-class="i" ng-repeat="i in createArray(benefictAvg) track by $index"/>
             </div>
           </div>
