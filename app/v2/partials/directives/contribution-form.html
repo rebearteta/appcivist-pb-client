@@ -5,11 +5,11 @@
   </header>
   <div class="modal-body">
     <form name="contributionForm">
-      <fieldset class="divider" ng-if="userIsAssemblyCoordinator && isCreate">
+      <!--<fieldset class="divider" ng-if="userIsAssemblyCoordinator && isCreate">
         <label for="upload">{{'Upload csv file' | translate}}</label>
         <input type="file" name="upload" fileread="file.csv">
         <a class="button__modal_submit" ng-click="submit()">{{'Upload' | translate}}</a>
-      </fieldset>
+      </fieldset>-->
       <fieldset>
         <div class="field__container">
           <label for="add_proposal__title">{{'Title' | translate}} <abbr title="Required">*</abbr></label>
@@ -65,7 +65,28 @@
             </div>
           </fieldset>
         </div>
+        <fieldset ng-init="addFile=false">
+          <a href="" ng-click="addFile = !addFile"><i class="fa fa-paperclip"></i>&nbsp;{{'Add files' | translate}}</a>
+        </fieldset>
+        <fieldset ng-show="addFile">
+            <fieldset>
+              <div class="field__container">
+                <label for="name">{{'Name' | translate}}</label>
+                <input name="name" ng-model="newAttachment.name">
+              </div>
+            </fieldset>
+            <fieldset>
+              <div class="field__container">
+                <label for="file">{{'File' | translate}}</label>
+                <input type="file" name="file" fileread="newAttachment.file">
+              </div>
+            </fieldset>
+            <fieldset>
+              <button class="button__modal_submit" ng-click="submitAttachment()">{{'Add' | translate}}</button>
+            </fieldset>   
+        </fieldset>
         <fieldset>
+          <br><br>
           <a class="button__modal_submit" ng-click="submit()">{{'Submit' | translate}}</a>
         </fieldset>
     </form>
