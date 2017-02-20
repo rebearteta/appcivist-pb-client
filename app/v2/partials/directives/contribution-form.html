@@ -57,7 +57,7 @@
             <tags-field load-items="loadThemes({query: query})" options="themesOptions" selected="contribution.existingThemes" prefetch="true" disabled="disabled"></tags-field>
           </fieldset>
         </div>
-        <div ng-if="isCreate">
+        <!-- <div ng-if="isCreate">
           <fieldset>
             <div class="field__container">
               <label for="add_proposal__source_code">{{'Source Code' | translate}}</label>
@@ -65,30 +65,33 @@
             </div>
           </fieldset>
         </div>
-        <fieldset ng-init="addFile=false">
-          <a href="" ng-click="addFile = !addFile"><i class="fa fa-paperclip"></i>&nbsp;{{'Add files' | translate}}</a>
-        </fieldset>
-        <fieldset ng-show="addFile">
-            <fieldset>
-              <div class="field__container">
-                <label for="name">{{'Name' | translate}}</label>
-                <input name="name" ng-model="newAttachment.name">
-              </div>
-            </fieldset>
-            <fieldset>
-              <div class="field__container">
-                <label for="file">{{'File' | translate}}</label>
-                <input type="file" name="file" fileread="newAttachment.file">
-              </div>
-            </fieldset>
-            <fieldset>
-              <button class="button__modal_submit" ng-click="submitAttachment()">{{'Add' | translate}}</button>
-            </fieldset>   
-        </fieldset>
-        <fieldset>
-          <br><br>
-          <a class="button__modal_submit" ng-click="submit()">{{'Submit' | translate}}</a>
-        </fieldset>
+        -->
+      </fieldset>
+      <fieldset ng-init="addFile=false">
+        <a href="" ng-click="addFile = !addFile"><i class="fa fa-paperclip"></i>&nbsp;{{'Add files' | translate}}</a>
+      </fieldset>
+      <fieldset ng-show="addFile">
+          <fieldset>
+            <div class="field__container">
+              <label for="name">{{'Name' | translate}}</label>
+              <input name="name" ng-model="newAttachment.name">
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="field__container">
+              <label for="file">{{'File' | translate}}</label>
+              <input type="file" name="file" fileread="newAttachment.file">
+            </div>
+          </fieldset>
+          <fieldset>
+            <button class="button__modal_submit" ng-click="submitAttachment()">{{'Add' | translate}}</button>
+          </fieldset>   
+      </fieldset>
+
+      <fieldset>
+        <br><br>
+        <a class="button__modal_submit" ng-click="submit()">{{'Submit' | translate}}</a>
+      </fieldset>
     </form>
   </div>
 </div>
